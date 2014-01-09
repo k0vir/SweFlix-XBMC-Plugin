@@ -86,7 +86,7 @@ def main(params):
         subtitles=scraper.get_video_subtitle(params['srt'])
         player = xbmc.Player()
         while not xbmc.Player().isPlaying():
-            xbmc.sleep(5000)
+            xbmc.sleep(8000)
         player.setSubtitles(subtitles)
     utils.end_directory()
 
